@@ -31,6 +31,8 @@ agent engineering.
 
 Diagram-first collaboration platform for my diploma project.
 
+Repository: [MrAlchemist74/ProjectFlow](https://github.com/MrAlchemist74/ProjectFlow)
+
 Stack: React, Vite, TypeScript, NestJS, Prisma, PostgreSQL, Redis, Socket.IO,
 LiveKit, Docker Compose.
 
@@ -47,7 +49,7 @@ Work done:
   web app.
 - Wrote architecture, API, deployment, and demo documentation.
 
-Status: active diploma project. Public repository setup is in progress.
+Status: active diploma project.
 
 ### Quest Bot
 
@@ -74,6 +76,8 @@ Status: private repository, cleanup branch prepared.
 ### VLESS Reality Telegram Bot Docs
 
 Documentation for a VPS-based Xray/VLESS Reality setup with a Telegram bot.
+
+Repository: [MrAlchemist74/vless-reality-tgbot-docs](https://github.com/MrAlchemist74/vless-reality-tgbot-docs)
 
 Stack described in docs: Linux VPS, Docker Compose, Xray, VLESS Reality,
 Python/aiogram.
