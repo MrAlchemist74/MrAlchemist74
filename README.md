@@ -1,4 +1,4 @@
-# Вадим Genze
+# Вадим Гензе
 
 Студент Software Engineering в TPU. Работаю с backend-разработкой,
 инфраструктурой, Linux/VPS, Docker, PostgreSQL, технической поддержкой
