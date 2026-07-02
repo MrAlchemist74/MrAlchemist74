@@ -1,112 +1,131 @@
-# Vadim Genze
+# Вадим Genze
 
-Software Engineering student at Tomsk Polytechnic University. I work around
-backend development, infrastructure, Linux/VPS operations, Docker, PostgreSQL,
-technical support for AI platforms, AI agents, and engineering documentation.
+Студент Software Engineering в TPU. Работаю с backend-разработкой,
+инфраструктурой, Linux/VPS, Docker, PostgreSQL, технической поддержкой
+AI-платформ, AI-агентами и инженерной документацией.
 
-I like projects where the code, environment, deployment notes, and runbooks are
-clear enough for another engineer to continue the work.
+Мне интересны проекты, где важен не только код, но и то, как система
+запускается, конфигурируется, обслуживается и объясняется другим людям.
 
-## Focus
+## Чем занимаюсь
 
-- Backend services and API design
-- Docker-based local and server environments
-- PostgreSQL/Redis application stacks
-- Linux, Nginx, VPS operations, and infrastructure notes
-- Technical documentation: README files, runbooks, API and architecture docs
-- AI-assisted tools, Telegram bots, and agent workflows
+- Backend-сервисы и API.
+- Docker-окружения для локальной разработки и VPS.
+- Приложения на PostgreSQL/Redis.
+- Linux, Nginx, systemd, базовая эксплуатация серверов.
+- README, runbook, deployment-документация и заметки по архитектуре.
+- Telegram-боты, AI-assisted инструменты и агентные процессы.
 
-## Stack
+## Стек
 
 Python, FastAPI, Django, Node.js, NestJS, Express, TypeScript, React, Vite,
 PostgreSQL, Redis, Prisma, SQLAlchemy/Alembic, Docker, Docker Compose, Linux,
-Nginx, MkDocs, Markdown.
+Nginx, systemd, MkDocs, Markdown.
 
-Currently learning: Kubernetes, observability, infrastructure security, and AI
-agent engineering.
+Сейчас углубляюсь в Kubernetes, observability, инфраструктурную безопасность и
+AI-агентов.
 
-## Featured Projects
+## Проекты
 
 ### ProjectFlow
 
-Diagram-first collaboration platform for my diploma project.
+Платформа для совместной работы над проектами с diagram-first подходом.
 
-Repository: [MrAlchemist74/ProjectFlow](https://github.com/MrAlchemist74/ProjectFlow)
+Репозиторий: [MrAlchemist74/ProjectFlow](https://github.com/MrAlchemist74/ProjectFlow)
 
-Stack: React, Vite, TypeScript, NestJS, Prisma, PostgreSQL, Redis, Socket.IO,
+Стек: React, Vite, TypeScript, NestJS, Prisma, PostgreSQL, Redis, Socket.IO,
 LiveKit, Docker Compose.
 
-Work done:
+Что сделал:
 
-- Set up the monorepo structure for frontend, backend, shared types, infra, and
-  docs.
-- Built workspace, invite, board, file, search, auth, voice, and admin backend
-  modules.
-- Connected `.drawio` XML board storage with real-time board events.
-- Built the React workspace UI with board editor, file explorer, previews, and
-  voice-room panel.
-- Added a local Docker Compose stack with PostgreSQL, Redis, LiveKit, API, and
-  web app.
-- Wrote architecture, API, deployment, and demo documentation.
+- Собрал monorepo-структуру: frontend, backend, shared types, infra и docs.
+- Реализовал backend-модули для auth, users, workspaces, invites, boards,
+  files, search, voice, admin и health.
+- Подключил хранение `.drawio` XML-досок и realtime-события через Socket.IO.
+- Собрал React UI для workspace, board editor, file explorer, preview и voice
+  room panel.
+- Подготовил Docker Compose окружение с API, web, PostgreSQL, Redis и LiveKit.
+- Описал архитектуру, API, deployment и demo flow.
 
-Status: active diploma project.
+Статус: активный дипломный проект.
+
+### OwnCord VPS Deployment
+
+Self-hosted мессенджер, развернутый на VPS.
+
+Стек: Node.js, Express, Socket.IO, SQLite, React, Vite, WebRTC, Web Push,
+Nginx, systemd.
+
+Что сделал на сервере:
+
+- Проанализировал и описал production-развертывание на VPS.
+- Проверил systemd-сервис, рабочую директорию, runtime-пользователя и порт.
+- Описал Nginx reverse proxy и WebSocket forwarding для домена.
+- Зафиксировал storage layout, env-переменные без секретов и заметки по деплою.
+- Подготовил безопасное описание для README/портфолио.
+
+Статус: deployed service. Кодовая база указывает на upstream OwnCord, поэтому
+публично описываю это как deployment, maintenance и документацию, а не как
+авторство всего продукта.
 
 ### Quest Bot
 
-Telegram bot for group quests, reports, voting, achievements, stats, and admin
-exports.
+Telegram-бот для групповых квестов, отчетов, голосования, достижений,
+статистики и admin exports.
 
-Stack: Python, aiogram, asyncpg, PostgreSQL, Docker Compose, optional Google
-Generative Language API integration.
+Стек: Python, aiogram, asyncpg, PostgreSQL, Docker Compose, Google Generative
+Language API.
 
-Work done:
+Что сделал:
 
-- Organized handlers for quest creation, reports, voting, profile, stats, menu,
-  membership, and admin commands.
-- Added PostgreSQL schema for users, quests, attempts, reports, votes,
-  achievements, cooldowns, and exports.
-- Added scheduler logic for deadlines, vote closure, reminders, cooldowns, and
-  achievement grants.
-- Packaged the bot and database with Docker Compose.
-- Added README, `.env.example`, and `.gitignore`; removed local `.env` from Git
+- Организовал handlers для quest flow, reports, voting, profile, stats, menu,
+  membership и admin-команд.
+- Добавил PostgreSQL-схему для users, quests, attempts, reports, votes,
+  achievements, cooldowns и exports.
+- Реализовал scheduler для дедлайнов, закрытия голосований, reminders,
+  cooldowns и выдачи достижений.
+- Упаковал bot + database через Docker Compose.
+- Добавил README, `.env.example`, `.gitignore` и убрал локальный `.env` из Git
   tracking.
 
-Status: private repository, cleanup branch prepared.
+Статус: приватный репозиторий, cleanup PR подготовлен.
 
 ### VLESS Reality Telegram Bot Docs
 
-Documentation for a VPS-based Xray/VLESS Reality setup with a Telegram bot.
+Документация для VPS-сетапа на Xray/VLESS Reality с Telegram-ботом.
 
-Repository: [MrAlchemist74/vless-reality-tgbot-docs](https://github.com/MrAlchemist74/vless-reality-tgbot-docs)
+Репозиторий:
+[MrAlchemist74/vless-reality-tgbot-docs](https://github.com/MrAlchemist74/vless-reality-tgbot-docs)
 
-Stack described in docs: Linux VPS, Docker Compose, Xray, VLESS Reality,
+Стек в документации: Linux VPS, Docker Compose, Xray, VLESS Reality,
 Python/aiogram.
 
-Work done:
+Что сделал:
 
-- Documented architecture, service boundaries, and connection flow.
-- Wrote runbook steps for health incidents, key rotation, and releases.
-- Added security notes for secrets, logs, firewall exposure, and Docker
+- Описал архитектуру, компоненты и потоки данных.
+- Подготовил runbook для health incidents, ротации ключей и release/change
+  процедур.
+- Добавил security notes про секреты, логи, firewall exposure и Docker
   hardening.
 
-Status: documentation-only repository.
+Статус: documentation-only репозиторий.
 
 ### MAXYA
 
-SFU MAX Mini App repository with a Python-first migration path and split-service
-target architecture.
+SFU MAX Mini App с Python-first migration path и split-service target
+architecture.
 
-Work I can publicly describe from the local branch:
+Что могу публично описывать по локальной ветке:
 
-- Delivery and operations documentation.
-- Server sizing and MVP delivery baseline notes.
-- Runtime shape, target architecture, and operational checkpoints.
+- Delivery и operations documentation.
+- Server sizing и MVP delivery baseline notes.
+- Описание current runtime shape, target architecture и operational
+  checkpoints.
 
-Status: private or access-limited repository; details stay conservative.
+Статус: private/access-limited repository, поэтому детали оставляю
+консервативными.
 
-## Russian
+## Контакты
 
-Я Вадим, студент Software Engineering в TPU. Мне интересны backend,
-инфраструктура, DevOps, Linux, Docker, PostgreSQL, Kubernetes, AI-агенты и
-техническая документация. Люблю доводить проекты до состояния, где понятны код,
-запуск, окружение и эксплуатация.
+- GitHub: [MrAlchemist74](https://github.com/MrAlchemist74)
+- Email / Telegram / LinkedIn: добавлю, если решу публиковать.
