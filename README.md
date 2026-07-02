@@ -47,8 +47,6 @@ LiveKit, Docker Compose.
 - Подготовил Docker Compose окружение с API, web, PostgreSQL, Redis и LiveKit.
 - Описал архитектуру, API, deployment и demo flow.
 
-Статус: активный дипломный проект.
-
 ### OwnCord VPS Deployment
 
 Self-hosted мессенджер, развернутый на VPS.
@@ -63,10 +61,6 @@ Nginx, systemd.
 - Описал Nginx reverse proxy и WebSocket forwarding для домена.
 - Зафиксировал storage layout, env-переменные без секретов и заметки по деплою.
 - Подготовил безопасное описание для README/портфолио.
-
-Статус: deployed service. Кодовая база указывает на upstream OwnCord, поэтому
-публично описываю это как deployment, maintenance и документацию, а не как
-авторство всего продукта.
 
 ### Quest Bot
 
@@ -87,45 +81,3 @@ Language API.
 - Упаковал bot + database через Docker Compose.
 - Добавил README, `.env.example`, `.gitignore` и убрал локальный `.env` из Git
   tracking.
-
-Статус: приватный репозиторий, cleanup PR подготовлен.
-
-### VLESS Reality Telegram Bot Docs
-
-Документация для VPS-сетапа на Xray/VLESS Reality с Telegram-ботом.
-
-Репозиторий:
-[MrAlchemist74/vless-reality-tgbot-docs](https://github.com/MrAlchemist74/vless-reality-tgbot-docs)
-
-Стек в документации: Linux VPS, Docker Compose, Xray, VLESS Reality,
-Python/aiogram.
-
-Что сделал:
-
-- Описал архитектуру, компоненты и потоки данных.
-- Подготовил runbook для health incidents, ротации ключей и release/change
-  процедур.
-- Добавил security notes про секреты, логи, firewall exposure и Docker
-  hardening.
-
-Статус: documentation-only репозиторий.
-
-### MAXYA
-
-SFU MAX Mini App с Python-first migration path и split-service target
-architecture.
-
-Что могу публично описывать по локальной ветке:
-
-- Delivery и operations documentation.
-- Server sizing и MVP delivery baseline notes.
-- Описание current runtime shape, target architecture и operational
-  checkpoints.
-
-Статус: private/access-limited repository, поэтому детали оставляю
-консервативными.
-
-## Контакты
-
-- GitHub: [MrAlchemist74](https://github.com/MrAlchemist74)
-- Email / Telegram / LinkedIn: добавлю, если решу публиковать.
