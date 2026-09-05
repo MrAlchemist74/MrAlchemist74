@@ -1,83 +1,31 @@
 # Вадим Гензе
 
-Студент Software Engineering в TPU. Работаю с backend-разработкой,
-инфраструктурой, Linux/VPS, Docker, PostgreSQL, технической поддержкой
-AI-платформ, AI-агентами и инженерной документацией.
+Ищу работу в DevOps/SRE. Пишу на Python, работаю с Linux, Docker и PostgreSQL.
 
-Мне интересны проекты, где важен не только код, но и то, как система
-запускается, конфигурируется, обслуживается и объясняется другим людям.
-
-## Чем занимаюсь
-
-- Backend-сервисы и API.
-- Docker-окружения для локальной разработки и VPS.
-- Приложения на PostgreSQL/Redis.
-- Linux, Nginx, systemd, базовая эксплуатация серверов.
-- README, runbook, deployment-документация и заметки по архитектуре.
-- Telegram-боты, AI-assisted инструменты и агентные процессы.
-
-## Стек
-
-Python, FastAPI, Django, Node.js, NestJS, Express, TypeScript, React, Vite,
-PostgreSQL, Redis, Prisma, SQLAlchemy/Alembic, Docker, Docker Compose, Linux,
-Nginx, systemd, MkDocs, Markdown.
-
-Сейчас углубляюсь в Kubernetes, observability, инфраструктурную безопасность и
-AI-агентов.
+Больше всего мне интересна эксплуатация сервисов: настроить окружение, разобраться в логах, найти причину сбоя и понять, как его избежать в следующий раз. Стараюсь оставлять понятные инструкции, чтобы при следующем запуске не восстанавливать всё по памяти.
 
 ## Проекты
 
-### ProjectFlow
+### [ProjectFlow](https://github.com/MrAlchemist74/ProjectFlow)
 
-Платформа для совместной работы над проектами с diagram-first подходом.
+Дипломный проект для совместной работы с диаграммами, файлами и голосовыми комнатами. Окружение Docker Compose объединяет пять сервисов: API, веб-приложение, PostgreSQL, Redis и LiveKit. Настроены проверки состояния и порядок запуска; данные вынесены в тома и отдельный каталог. Это окружение для локальной разработки.
 
-Репозиторий: [MrAlchemist74/ProjectFlow](https://github.com/MrAlchemist74/ProjectFlow)
+### [Microservice Lab](https://github.com/MrAlchemist74/lab-devops-microservice)
 
-Стек: React, Vite, TypeScript, NestJS, Prisma, PostgreSQL, Redis, Socket.IO,
-LiveKit, Docker Compose.
+Небольшой REST API на FastAPI и PostgreSQL. Docker-образ собирается в несколько этапов, приложение запускается без root, а Compose ждёт готовности базы перед стартом API. В репозитории есть коллекция запросов Postman.
 
-Что сделал:
+### [VPS / Xray](https://github.com/MrAlchemist74/vless-reality-tgbot-docs)
 
-- Собрал monorepo-структуру: frontend, backend, shared types, infra и docs.
-- Реализовал backend-модули для auth, users, workspaces, invites, boards,
-  files, search, voice, admin и health.
-- Подключил хранение `.drawio` XML-досок и realtime-события через Socket.IO.
-- Собрал React UI для workspace, board editor, file explorer, preview и voice
-  room panel.
-- Подготовил Docker Compose окружение с API, web, PostgreSQL, Redis и LiveKit.
-- Описал архитектуру, API, deployment и demo flow.
+Документация сервиса на VPS с Xray и Telegram-ботом: устройство системы, диагностика недоступности и порядок работы с настройками доступа. Опубликованы описания и инструкции; исходного кода сервиса в этом репозитории нет.
 
-### OwnCord VPS Deployment
+## С чем работаю
 
-Self-hosted мессенджер, развернутый на VPS.
+- Linux, Docker, Docker Compose.
+- PostgreSQL и Redis.
+- Python и FastAPI.
+- Проверки состояния сервисов, логи и диагностика неполадок.
+- Инструкции по запуску и обслуживанию.
 
-Стек: Node.js, Express, Socket.IO, SQLite, React, Vite, WebRTC, Web Push,
-Nginx, systemd.
+## Образование
 
-Что сделал на сервере:
-
-- Проанализировал и описал production-развертывание на VPS.
-- Проверил systemd-сервис, рабочую директорию, runtime-пользователя и порт.
-- Описал Nginx reverse proxy и WebSocket forwarding для домена.
-- Зафиксировал storage layout, env-переменные без секретов и заметки по деплою.
-- Подготовил безопасное описание для README/портфолио.
-
-### Quest Bot
-
-Telegram-бот для групповых квестов, отчетов, голосования, достижений,
-статистики и admin exports.
-
-Стек: Python, aiogram, asyncpg, PostgreSQL, Docker Compose, Google Generative
-Language API.
-
-Что сделал:
-
-- Организовал handlers для quest flow, reports, voting, profile, stats, menu,
-  membership и admin-команд.
-- Добавил PostgreSQL-схему для users, quests, attempts, reports, votes,
-  achievements, cooldowns и exports.
-- Реализовал scheduler для дедлайнов, закрытия голосований, reminders,
-  cooldowns и выдачи достижений.
-- Упаковал bot + database через Docker Compose.
-- Добавил README, `.env.example`, `.gitignore` и убрал локальный `.env` из Git
-  tracking.
+Окончил Томский политехнический университет по направлению «Программная инженерия». Сейчас учусь в магистратуре ТПУ на программе «Инженерия DevOps».
